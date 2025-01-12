@@ -3,7 +3,8 @@ const compChoice = document.querySelector('.comp .elements');
 const compScoreEle = document.querySelector('.compScore');
 const userScoreEle = document.querySelector('.userScore');
 const note = document.querySelector('.notes p');
-const arrGame = ['👊', '🤚', '✌️'];
+// const arrGame = ['👊', '🤚', '✌️'];
+const arrGame = ['rock', 'paper', 'scissors'];
 let compScore = 0;
 let userScore = 0;
 
@@ -12,15 +13,13 @@ function updateScore(userScore, compScore){
     userScoreEle.innerText = `You : ${userScore}`;
 }
 function message(compChoice1, userChoice1, winner){
-    console.log(arrGame[compChoice1], arrGame[userChoice1],winner);
-    compChoice.innerText = '.';
-    compChoice.innerText = arrGame[compChoice1];
+    compChoice.innerHTML = `<img src="./imgs/${arrGame[compChoice1]}.png">`;
     if(winner == 0){
-        note.innerHTML = `You won the Match<br> ${arrGame[userChoice1]} beat ${arrGame[compChoice1]}`;
+        note.innerHTML = `You won the Match<br> ${arrGame[userChoice1].toUpperCase()} beat ${arrGame[compChoice1].toUpperCase()}`;
     }else if(winner == 1){
-        note.innerHTML = `Computer won the Match<br> ${arrGame[compChoice1]} beat ${arrGame[userChoice1]}`;
+        note.innerHTML = `Computer won the Match<br> ${arrGame[compChoice1].toUpperCase()} beat ${arrGame[userChoice1].toUpperCase()}`;
     }else{
-        note.innerHTML = `draw match`;
+        note.innerHTML = `Draw Match`;
     }
 }
 
@@ -31,8 +30,6 @@ userChoice.forEach((element) =>{
         });
         element.classList.add('selected');
         let randomNum = Math.floor(Math.random() * 3);
-        let temp1 = userScore;
-        let temp2 = compScore;
         if(randomNum != element.getAttribute('id')){
             if(randomNum== 1){
                 element.getAttribute('id') == 2 ? winner = 0 : winner = 1;
