@@ -1,2 +1,2 @@
-# stone-paper-sesccors
-game : stone-paper-sesccors
+# Rock Paper Scissors
+game : Rock Paper Scissors
