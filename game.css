@@ -128,7 +128,7 @@ body{
 .score div{
     display: flex;
     flex-direction: column;
-    line-height: 2rem;
+    line-height: 1.5;
 }
 .score div h4{
     font-size: 1.3rem;
@@ -152,5 +152,8 @@ body{
     }
     .user{
         bottom: 10%;
+    }
+    .container{
+        gap: 1.8rem;
     }
 }
