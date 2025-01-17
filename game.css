@@ -114,7 +114,7 @@ body{
 }
 .score{
     margin-top: -2rem;
-    padding: 1rem;
+    padding: 0.2rem 1rem;
     /* width: 100%; */
     text-align: center;
     border: 1px solid var(--main-color);
