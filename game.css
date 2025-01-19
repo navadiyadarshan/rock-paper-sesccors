@@ -18,7 +18,7 @@
 }
 body{
     min-height: 100vh;
-    background: var(--bg-color);
+    background: var(--bg2-color);
     color: #fff;
 }
 .heading{
