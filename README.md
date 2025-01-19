@@ -3,7 +3,8 @@
 
 <ul type="disc">
         <li>This mini project is a simple, interactive Rock Paper Scissors game that uses HTML, CSS, and JavaScript to allow users to play against the computer, with dynamic score tracking and a restart functionality.</li>
-        <li>About This Project</li>
+        <br>
+        <li><u>About This Project<u></li>
         <ol type="1">
             <li>HTML Structure:</li>
             <ul type="circle">
@@ -38,7 +39,8 @@
                 <li>Provided a restart button to reset the game to its starting state.</li>
             </ul>
         </ol>
-        <li>Learned from this Project</li>
+        <br>
+        <li><u>Learned from this Project</u></li>
         <ol type="1">
             <li>HTML5:</li>
             <ul type="circle">
